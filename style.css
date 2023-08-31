@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 300px;
+  /* background-color: #fff; */
+  /* background: radial-gradient(circle, rgba(70,139,151,1) 0%, rgba(29,91,121,1) 100%); */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.searchbar {
+  width: 100%;
+  height: 100px;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 20px;
+  gap: 0;
+}
+.searchbar input[type="text"] {
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  padding-left: 20px;
+  border: 1px solid #dddddd;
+  font-family: roboto;
+  font-weight: 500;
+  font-size: 0.8rem;
+  outline: none;
+  background-color: #f6f6f6;
+  color: #6e6e6e;
+}
+.searchbar button {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #cfcfcf;
+  border-left: none;
+  margin-left: 0;
+  cursor: pointer;
+  background-color: #f4d160;
+  border: none;
+  position: relative;
+}
+.searchbar button i {
+  font-size: 0.8rem;
+  color: #ba9c37;
+}
+/* 
+.searchbar button::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #F4D160;
+    width: 30px;
+    height: 30px;
+} */
+
+.main {
+  width: 100%;
+  /* height: 300px; */
+  /* background-color: blueviolet; */
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.main .location {
+  font-family: poppins;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d5d9b;
+}
+.main p {
+  margin-bottom: 20px;
+  font-family: roboto;
+}
+.main .temp {
+  font-family: poppins;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #f4d160;
+}
+
+.desc {
+  width: 100%;
+  font-family: roboto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.desc .box {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.imgSrc {
+  width: 64px;
+}
+
+.desc .box span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5b5b5b;
+
+  margin-left: 20px;
+
+  width: 100px;
+}
+
+.desc .box i {
+  font-size: 1.2rem;
+  color: #1d5d9b;
+
+  margin-left: 35px;
+
+  width: 20px;
+}
+
+.desc .box p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #5f5f5f;
+}
+
+.dev {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: poppins;
+  color: #afafaf;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
